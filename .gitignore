@@ -1,0 +1,13 @@
+# Environnement virtuel
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Base vectorielle persistante (données locales)
+chroma_db/
+.pytest_cache/
+
+# Divers
+.DS_Store
+*.log
