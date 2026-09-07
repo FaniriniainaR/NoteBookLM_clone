@@ -1,4 +1,4 @@
-# 📚 NoteBookLM_clone — Assistant RAG 100% local
+# NoteBookLM_clone — Assistant RAG 100% local
 
 Application Streamlit implémentant un système **RAG** (Retrieval-Augmented Generation)
 entièrement **local**, sans aucun appel à une API externe. L'utilisateur charge des
@@ -6,7 +6,7 @@ documents (PDF, Markdown, TXT) et interagit avec eux via deux modes.
 
 ---
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
 - **Chargement de documents** : PDF, Markdown (`.md`), Texte (`.txt`) — multi-fichiers.
 - **Deux modes d'interaction** :
@@ -17,7 +17,7 @@ documents (PDF, Markdown, TXT) et interagit avec eux via deux modes.
 
 ---
 
-## 🧠 Architecture
+## Architecture
 
 ```
 Documents (PDF/MD/TXT)
@@ -54,7 +54,7 @@ Documents (PDF/MD/TXT)
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ```bash
 # 1. Créer et activer un environnement virtuel
@@ -72,7 +72,7 @@ ollama pull mistral
 
 ---
 
-## ▶️ Utilisation
+## Utilisation
 
 ```bash
 streamlit run app.py
@@ -90,7 +90,7 @@ Puis ouvrez `http://localhost:8501`.
 
 ---
 
-## 🧪 Tests unitaires
+## Tests unitaires
 
 Des tests couvrent le pipeline sans interface (chargement, découpage, vectorisation,
 recherche, parcours complet).
@@ -101,7 +101,7 @@ python -m pytest test_app.py -v
 
 ---
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 app.py            # Application Streamlit complète (interface + pipeline RAG)
@@ -112,7 +112,7 @@ chroma_db/        # Base vectorielle persistante (générée, non versionnée)
 
 ---
 
-## ⚠️ Prérequis
+## Prérequis
 
 - **Ollama** doit tourner localement (`ollama serve`) et le modèle choisi doit être
   téléchargé (`ollama pull mistral`). L'application vérifie la disponibilité et
